@@ -1,0 +1,8 @@
+Usecase: ingame, obs-overlay
+Name: Session Best
+Version: 1.0
+Author: Lidl
+CompatibleWith: tosu
+Resolution: 460x150
+authorLinks:
+Notes: Shows the highest pp play you passed this session. Fails, quits and replays are ignored. The session resets when osu! restarts or after 6 idle hours. Double-click the card to reset it by hand.

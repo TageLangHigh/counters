@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Session Best by Lidl</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <main id="card" class="card is-empty" title="Double-click to reset the session">
+    <section class="summary">
+      <div class="score">
+        <span class="eyebrow">Session best</span>
+        <div class="score__line">
+          <span id="grade" class="grade"></span>
+          <span id="bestPp" class="pp">0</span>
+          <span class="pp__unit">pp</span>
+        </div>
+        <span id="passes" class="passes">0 passes</span>
+      </div>
+
+      <div class="details">
+        <p id="title" class="details__title">No pass yet this session</p>
+        <p id="subtitle" class="details__subtitle">Finish a map to set your best</p>
+        <dl class="stats">
+          <div><dt>Stars</dt><dd id="stars"></dd></div>
+          <div><dt>Mods</dt><dd id="mods"></dd></div>
+          <div><dt>Acc</dt><dd id="accuracy"></dd></div>
+          <div><dt>Combo</dt><dd id="combo"></dd></div>
+          <div><dt>Miss</dt><dd id="misses"></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="live" class="live" hidden>
+      <span id="liveLabel" class="live__label">Live</span>
+      <span class="live__pp"><span id="livePp">0</span> pp</span>
+      <div class="live__track"><div id="liveFill" class="live__fill"></div></div>
+      <span class="live__fc">FC <span id="liveFc">0</span></span>
+    </section>
+  </main>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
